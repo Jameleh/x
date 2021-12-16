@@ -91,12 +91,12 @@ appExp
           var crt = crypto.createPrivateKey(fs.readFileSync(curPath + '/openssl/something.key.pem'));
           var buffer = Buffer.from(to_decrypt);
           var msg = crypto.privateDecrypt({ key: crtUse, padding: crypto.constants.RSA_PKCS1_PADDING }, buffer).toString('utf8');
-
+            result = crypto.privateDecrypt(crt, buffer).toString('utf8');
           */
-          result = `Error  is  ${e} in crypto.privateDecrypt `;
-          console.log(result)
+        //  result = ;
+          console.log(`Error  is  ${e} in crypto.privateDecrypt `)
         }
-        debugger;
+        //debugger;
         res.set(CORS).send(String(result));
       // res.send(String(result));
       });
