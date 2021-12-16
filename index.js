@@ -22,7 +22,7 @@ const CORS = {
   "Access-Control-Allow-Headers":
     "X-Resp,Content-Type, Accept, Access-Control-Allow-Headers, Access-Control-Expose-Headers",
 };
-
+appExp.get('/login',(req,res)=>res.send('itmo2021'))
 appExp.get('/', async(req,res)=>
 
 {
