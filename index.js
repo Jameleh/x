@@ -38,7 +38,7 @@ appExp.get('/', async(req,res)=>
   
 });
 appExp
-  .post('/test', async (req, res) => {
+  .post('/decypher', async (req, res) => {
     
     let o = {};
    let  upload= new busboy({ headers: req.headers });
