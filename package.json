@@ -1,0 +1,24 @@
+{
+  "name": "SecretKey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "busboy": "^0.3.1",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "fs": "0.0.1-security",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
